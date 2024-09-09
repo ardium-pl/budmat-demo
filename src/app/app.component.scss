@@ -53,5 +53,93 @@ hr {
   section {
     height: 100%;
     padding-top: 1.75rem;
+    justify-content: flex-start;
+  }
+}
+
+.rags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+  padding: 3rem;
+}
+.rag-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  h3 {
+    align-self: center;
+    padding-bottom: 1rem;
+  }
+}
+.skeleton {
+  height: 1rem;
+  border-radius: 9999px;
+  background-color: #e8e8e8;
+}
+
+.workflow {
+  display: flex;
+  height: 600px;
+  gap: 3rem;
+  padding: 0 2rem;
+  justify-content: center;
+  position: relative;
+
+  .workflow-item {
+    padding: 1rem 1.25rem;
+    width: 20%;
+    border: 2px solid var(--bg3);
+    border-radius: 1.25rem;
+    height: max-content;
+    position: relative;
+    transform: translateY(-50%);
+
+    &.disabled {
+      border-color: #d2d2d2;
+      opacity: 50%;
+    }
+  }
+}
+.w1 {
+  height: 360px;
+  margin-bottom: 6rem;
+
+  .workflow-item {
+    &:nth-child(1) {
+      top: 56px;
+    }
+    &:nth-child(2) {
+      top: 136px;
+    }
+    &:nth-child(3) {
+      top: 216px;
+    }
+    &:nth-child(4) {
+      top: 296px;
+    }
+  }
+}
+.w2 {
+  height: 488px;
+  
+  .workflow-item {
+    &:nth-child(1) {
+      top: 102px;
+    }
+    &:nth-child(2) {
+      top: 182px;
+    }
+    &:nth-child(3) {
+      top: 262px;
+    }
+    &:nth-child(4) {
+      top: 342px;
+    }
+    &:nth-child(5) {
+      top: 422px;
+    }
   }
 }
