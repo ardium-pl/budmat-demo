@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.icon {
+  width: 60px;
+}
+.heading {
+  font-size: 20px;
+}

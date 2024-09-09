@@ -1,0 +1,126 @@
+<main>
+  <section class="master-card">
+    <h2>Teksty i tagi</h2>
+    <div class="cards">
+      <div class="card-row">
+        <h3>Email</h3>
+        <div class="card">
+          <p>
+            Witam,
+            <br />
+            z tej strony Tomasz Dziubas, z firmy Megadach. Jestem dystrybutorem
+            Państwa produktów w Tarnowskich Górach i mam problem z wykonaniem
+            wyceny na dach spadzisty o powierzchni 250m2 dla domku
+            jednorodzinnego. Czy mógłbym prosić o spotkanie z Państwa
+            konsultanem w tej sprawie? Pozdrawiam,
+          </p>
+          <p>T.Dziubas</p>
+        </div>
+        <div class="card">
+          <div class="tag">problem: "<strong>wycena</strong>"</div>
+          <div class="tag">dystrybutor: "<strong>Megadach</strong>"</div>
+          <div class="tag">lokalizacja: "<strong>Ternowskie Góry</strong>"</div>
+          <div class="tag">
+            typ_inwestycji: "<strong>dom_jednorodzinny</strong>"
+          </div>
+          <div class="tag">powierzchnia: "<strong>250 m2</strong>"</div>
+        </div>
+      </div>
+      <hr>
+      <div class="card-row">
+        <h3>Umowa z dostawcą</h3>
+        <div class="card">
+          <p>
+            zawarta w dniu <strong>10.09.2024</strong> w Katowicach, pomiędzy:
+          </p>
+          <p>
+            <strong>ArcelorMittal Spółka Akcyjna</strong> z siedzibą w
+            Katowicach, działającą pod adresem: ul. Stalowa 1, 40-085 Katowice,
+            wpisaną do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego pod
+            numerem KRS 0000035611, o kapitale zakładowym w wysokości
+            300.000.000,00 złotych, posługującą się numerem NIP 9542249002,
+            reprezentowaną przez:
+          </p>
+          <p>…</p>
+        </div>
+        <div class="card">
+          <div class="tag">data_podpisania: "<strong>10.09.2024</strong>"</div>
+          <div class="tag">dostawca: "<strong>ArcelorMittal SA</strong>"</div>
+          <div class="tag">
+            wartosc_zamowienia: "<strong>500 000,00</strong>"
+          </div>
+          <div class="tag">waluta_zamowienia: "<strong>PLN</strong>"</div>
+          <div class="tag">data_dostawy: "<strong>12.12.2024</strong>"</div>
+        </div>
+      </div>
+      <hr>
+      <div class="card-row">
+        <h3>Dokument techniczny</h3>
+        <div class="card">
+          <p>
+            <strong> 1. Opis Produktu </strong>
+          </p>
+          <p>Kwadratowy Stalowy System Rynnowy Flamingo iQ to</p>
+          <p>…</p>
+          <p>
+            <strong> 2. Skład systemu </strong>
+          </p>
+          <p>
+            Kwadratowy Stalowy System Rynnowy Flamingo iQ składa się z
+            następujących elementów:
+          </p>
+          <ul>
+            <li>
+              <strong>Rynny</strong>: Kwadratowy przekrój, dostępne w
+              długościach 2 m, 3 m i 4 m.
+            </li>
+            <li>
+              <strong>Rury spustowe</strong>: Kwadratowy przekrój, wymiary: 80 x
+              80 mm, dostępne w długościach 1 m, 2 m, 3 m.
+            </li>
+            <li>
+              <strong>Uchwyty do rynien</strong>: Wykonane ze stali nierdzewnej,
+              mocowane bezpośrednio do konstrukcji dachu.
+            </li>
+            <li>
+              <strong>Łączniki rynien</strong>: Umożliwiają łączenie odcinków
+              rynien w sposób trwały i szczelny.
+            </li>
+          </ul>
+          <p>…</p>
+        </div>
+        <div class="card">
+          <div class="tag">produkt: "<strong>Flamingo iQ</strong>"</div>
+          <div class="tag">kategoria: "<strong>systemy_rynnowe</strong>"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="part2">
+    <section>
+      <app-card
+        [icon]="icon1"
+        heading="Przypisywanie pracownika"
+        description="Bazując na informacjach wygiągniętych z tekstu możemy do danego zadania przypisać konkretną osobę z firmy"
+      />
+    </section>
+    <section>
+      <app-card
+        [icon]="icon2"
+        heading="Pobieranie danych"
+        description="Tagi umożliwiają nam wyszkukiwanie odpowiadających treści tekstu informacji, którą możemy wykorzystać do odpowiedzi"
+      />
+    </section>
+    <section>
+      <app-card
+        [icon]="icon3"
+        heading="Przechowywanie danych"
+        description="Możemy przechowywać w ustruktyrozowany sposób dane, które wcześniej były tylko tekstem"
+      />
+    </section>
+  </div>
+</main>
+
+<ng-template #icon1></ng-template>
+<ng-template #icon2></ng-template>
+<ng-template #icon3></ng-template>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --bg: #CDD7E1;
+  --bg2: #2E3D72;
+  --fg: #6965E3;
+  --fg2:#2a0e5e;
+  --on-fg: #B5B4E7;
+
+  --bg3: #7a0afa;
+  --bg4: #5475d9;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  background: var(--bg3);
+  background: linear-gradient(155deg, var(--bg3) 0%, var(--bg4) 80%);
+  padding: 4rem;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+// styling
+h2 {
+  color: var(--bg2);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.625rem;
+  color: var(--bg2);
+  opacity: 90%;
+}
+p:not(:last-child) {
+  padding-bottom: 0.5rem;
+}
+ul, ol {
+  padding-left: 1.5rem;
+}
+li {
+  padding-left: 0.5rem;
+}
+strong {
+  color: var(--fg2);
+}
